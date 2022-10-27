@@ -3,9 +3,9 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-//Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//    return $request->user();
-//});
+//todo remove!
+header("Access-Control-Allow-Origin: http://localhost:3000");
+
 
 Route::group(['prefix' => 'v1'], function () {
     Route::group(['name' => 'slide', 'prefix' => 'slide'], function () {

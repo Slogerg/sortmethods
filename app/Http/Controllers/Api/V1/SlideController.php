@@ -14,6 +14,6 @@ class SlideController extends Controller
 
     public function calcResult(Request $request)
     {
-        dd($request->all());
+        dd($request->array);
     }
 }
